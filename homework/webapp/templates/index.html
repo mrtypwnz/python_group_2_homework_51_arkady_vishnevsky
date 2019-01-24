@@ -11,6 +11,49 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            background: rgb(222, 240, 204);
+            color: #222222;
+            margin-top: 30px;
+            background-color: #2a606c;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .head {
+            z-index: 2;
+            width: 100%;
+            background-color: #204b53;
+            opacity: 0.85;
+        }
+
+
+        a {
+            text-decoration: none;
+            color: #3399ff;
+            padding-right: 15px;
+        }
+
+        a:hover {
+            color: #730e7a;
+            transition: 0.3;
+
+        }
+        .footer {
+            margin-top: 130px;
+            background-color: black;
+            overflow: hidden;
+        }
+        .footer p {
+            padding: 30px 0;
+            margin-bottom: -10px;
+            color: #fefffa;
+        }
+</style>
 
 <div id="sample">
 </div>
@@ -31,7 +74,7 @@
     function Navpanel(props) {
         return (
             <header>
-                <div className="head container">
+                <div className="head">
                     <h1><a href="#">{props.main}</a></h1>
                     <nav>
                         <ul>
